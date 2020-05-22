@@ -2,8 +2,7 @@
 This is a template for an django application using docker + postgres + nginx. This templates requires the environment variables. 
 
 # Environment Variables
-This templates requires 3 files to be created inorder to work. These files are .end.dev, .env.prod, and .env.prod.db. Theses variable sets
-the needed variables needed in django.setting and docker-compose files (both dev and production files)
+This templates requires 3 files to be created inorder to work. These files are .end.dev, .env.prod, and .env.prod.db. These files set the needed variables needed in django.setting and docker-compose files (both dev and production files). **They belong in the same directory as the docker-compose files. **
 
 Here is an examples of what you needs: 
 
