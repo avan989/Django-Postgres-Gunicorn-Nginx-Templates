@@ -45,12 +45,16 @@ RUN apk add --no-cache jpeg-dev zlib-dev
 # create directory for the app user
 RUN mkdir -p /home/app/
 
+# create static folder
 RUN mkdir -p /home/app/static_cdn/
 RUN mkdir -p /home/app/media_cdn/
 
 # create the appropriate directories
-ENV HOME=/home/app/
+ENV HOME=/home/app
 ENV APP_HOME=$HOME/web
+
+RUN mkdir -p $HOME/static_cdn/
+RUN mkdir -p $HOME/media_cdn/
 RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
 
