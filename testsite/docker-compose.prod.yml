@@ -9,6 +9,7 @@ services:
     volumes:
       - static_volume:/home/app/static_cdn
       - media_volume:/home/app/media_cdn
+      - ./:/home/app/web
     expose:
       - 8000
     depends_on:
