@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       # mount local to container so changes are reflected.
-      - ./app:/app
+      - ./app:/home/app/web
 
         # for development only, use runserver - production will use gunicorn
     command: ./manage.py runserver 0.0.0.0:8000
