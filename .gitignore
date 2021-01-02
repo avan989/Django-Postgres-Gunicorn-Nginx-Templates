@@ -1,0 +1,4 @@
+# ignore environment variables
+.env.prod.db
+.env.dev
+.env.prod
